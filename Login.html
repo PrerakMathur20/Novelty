@@ -147,7 +147,14 @@
                           <input type="password" placeholder="" id="text-1057" name="pass"
                             class="u-border-2 u-border-grey-30 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-2"
                             required="required">
+                            <br>
+                            <h6 class="u-text u-text-body-alt-color u-text-2">  <a onclick="myFunction()"
+                              data-page-id="642830426"
+                              class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Forgot Password?</a>
+                              <p id="demo"></p>
+                          </h6>
                         </div>
+                        
                         <div class="u-align-center u-form-group u-form-submit">
                           <a href="#"
                             class="u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">Login<br>
@@ -223,6 +230,19 @@
       <p class="u-small-text u-text u-text-variant u-text-1">© Copyright Novelty Books 2021</p>
     </div>
   </footer>
+
+  <script>
+    function myFunction() {
+      let text;
+      let person = prompt("Please enter your Registered Email:", "");
+      if (person == null || person == "") {
+        text = "User cancelled the prompt.";
+      } else {
+        text = "Hello " + person + "! We've Sent you a guide on how you can recover your password. Thank you.";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+    </script>
 </body>
 
 </html>
